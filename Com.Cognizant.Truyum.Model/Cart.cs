@@ -15,5 +15,7 @@ namespace Com.Cognizant.Truyum.Model
         {
             total = this.total;
         }
+
+
     }
 }
