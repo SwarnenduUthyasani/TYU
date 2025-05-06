@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Com.Cognizant.Truyum.Dao\Com.Cognizant.Truyum.Dao.csproj" />
     <ProjectReference Include="..\TruyumOnline\TruyumOnline.csproj" />
   </ItemGroup>
 

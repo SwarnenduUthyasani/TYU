@@ -4,7 +4,7 @@
     {
         public DateTime ConvertToShortDateString (string inputDate)
         {
-            DateTime shortDate = DateTime.Parse (inputDate);
+            DateTime shortDate = DateTime.Parse(inputDate);
             return shortDate;
         }
     }

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Com.Cognizant.Truyum.Model\Com.Cognizant.Truyum.Model.csproj" />
+  </ItemGroup>
+
 </Project>

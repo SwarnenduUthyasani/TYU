@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Com.Cognizant.Truyum.Model
 {
-    internal class Cart
+    public class Cart
     {
-        private List<MenuItem> menuItemList = new List<MenuItem>();
-        private double total {  get; set; }
+        public List<MenuItem> menuItemList { get; set; } = new List<MenuItem>();
+        public double total { get; set; }
 
-        public Cart() 
+        public Cart(List<MenuItem> menuItemList, double total)
         {
-            total = this.total;
+            this.menuItemList = menuItemList;
+            this.total = total;
         }
 
-
+        public Cart()
+        {
+            //Console.WriteLine("Running Cart Cons");
+        }
     }
 }

@@ -1,10 +1,37 @@
-﻿namespace TruyumConsole
+﻿using Com.Cognizant.Truyum.Dao;
+
+
+namespace TruyumConsole
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MenuItemDaoCollectionTest menuItemDaoCollectionTest = new MenuItemDaoCollectionTest();
+
+            CartDaoCollectionTest cartDaoCollectionTest = new CartDaoCollectionTest();
+
+            menuItemDaoCollectionTest.TestGetMenuItemListAdmin();
+
+            Console.WriteLine("---------------------------------------------------------");
+
+            menuItemDaoCollectionTest.TestGetMenuItemListCustomer();
+
+            Console.WriteLine("---------------------------------------------------------");
+
+            menuItemDaoCollectionTest.TestModifyMenuItem();
+
+            Console.WriteLine("---------------------------------------------------------");
+
+            cartDaoCollectionTest.TestAddCartItem();
+
+            Console.WriteLine("---------------------------------------------------------");
+
+            cartDaoCollectionTest.TestGetAllCartItems();
+
+            Console.WriteLine("---------------------------------------------------------");
+
+            cartDaoCollectionTest.TestRemoveCartItem();
         }
     }
 }
